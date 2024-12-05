@@ -1,0 +1,79 @@
+main screen anim.png
+size:1874,407
+filter:Linear,Linear
+pma:true
+1
+bounds:1740,299,80,106
+3
+bounds:1752,36,43,49
+offsets:1,1,45,51
+Layer 0
+bounds:2,2,548,403
+Layer 1
+bounds:552,9,606,126
+Layer 11
+bounds:1740,191,79,106
+Layer 12
+bounds:1484,9,65,106
+rotate:90
+Layer 129 copy
+bounds:1162,155,576,250
+offsets:1,0,577,250
+Layer 13
+bounds:1822,298,48,107
+Layer 14
+bounds:1592,15,62,106
+rotate:90
+Layer 15
+bounds:1662,87,66,106
+offsets:1,0,68,106
+rotate:90
+Layer 16
+bounds:1160,2,72,106
+rotate:90
+Layer 17
+bounds:1554,79,74,106
+rotate:90
+Layer 18
+bounds:1268,3,71,106
+rotate:90
+Layer 19
+bounds:1376,3,71,106
+rotate:90
+Layer 20
+bounds:1770,117,48,49
+offsets:1,1,50,51
+Layer 21
+bounds:1700,36,50,49
+offsets:1,1,52,51
+Layer 22
+bounds:1821,152,39,49
+offsets:2,1,42,51
+rotate:90
+Layer 23
+bounds:1740,168,21,49
+offsets:1,1,24,51
+rotate:90
+Layer 24
+bounds:1820,108,42,49
+offsets:1,1,44,51
+rotate:90
+Layer 25
+bounds:1797,57,47,49
+offsets:2,1,50,51
+Layer 26
+bounds:1821,193,52,49
+offsets:1,1,54,51
+rotate:90
+Layer 27
+bounds:1821,247,51,49
+offsets:1,1,53,51
+Layer 28
+bounds:1797,11,44,49
+offsets:1,1,46,51
+rotate:90
+Layer 29
+bounds:552,137,608,268
+offsets:1,0,609,269
+Relax Tidy
+bounds:1162,76,390,77
