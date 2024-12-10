@@ -8,7 +8,7 @@ public class SlideManager : MonoBehaviour
     [SerializeField] private SlideItem slideItemPrefabs;
     [SerializeField] private Sprite[] listSprites;
 
-    [SerializeField] private SlideItem protoSlideItem;
+    [SerializeField] private SlideItem prototypeSlideItem;
     private int iMax = 0;
     private int jMax = 0;
     private SlideItem[,] slidesMatrix;
@@ -52,7 +52,7 @@ public class SlideManager : MonoBehaviour
     }
     private void Swap(SlideItem a, SlideItem b)
     {
-        SlideItem temp = protoSlideItem;
+        SlideItem temp = prototypeSlideItem;
         //doi gia tri hang va cot (i va j)
         temp.SwapRowAndColumn(a);
         a.SwapRowAndColumn(b);

@@ -4,12 +4,12 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-[CustomEditor(typeof(MyGridData))]
-public class MyGridDataEditor : Editor
+[CustomEditor(typeof(MyColorGridData))]
+public class MyColorGridDataEditor : Editor
 {
     private SerializedProperty _arrayWidth;
     private SerializedProperty _arrayHeight;
-    private MyGridData myGridData;
+    private MyColorGridData myGridData;
 
     private const float FixedMargin = 35f;
 
@@ -28,7 +28,7 @@ public class MyGridDataEditor : Editor
         EditorGUILayout.PropertyField(_arrayWidth);
         EditorGUILayout.PropertyField(_arrayHeight);
 
-        myGridData = (MyGridData) target;
+        myGridData = (MyColorGridData) target;
         Assert.IsNotNull(myGridData);
         
         if (myGridData.CellStates == null || myGridData.CellStates.Count == 0)
