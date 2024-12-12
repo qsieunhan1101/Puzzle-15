@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4927873356978370184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7286000956653523897}
+  - component: {fileID: 4095270943685269597}
+  m_Layer: 0
+  m_Name: PipeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7286000956653523897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927873356978370184}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4095270943685269597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927873356978370184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58d11dfda7039249b63e24027759096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipeItemPrefabs:
+  - {fileID: 5722003412013566909, guid: 12100fd5927f6fa4eaf15d97b14d2239, type: 3}
+  - {fileID: 1971201653598641266, guid: 69158d8ee96489a46ae606556485fce7, type: 3}
+  - {fileID: 6590430721291696657, guid: 409b4f8a0839afc4b832127c942db1b0, type: 3}
+  - {fileID: 3436573789897924172, guid: d0460b858723dfc48b8e3c13879a40fc, type: 3}
+  - {fileID: 7675662818458374319, guid: 526b583bacebbfa4cab9e0cd07e37680, type: 3}
+  - {fileID: 2256601210767082919, guid: 35a88eed7db1f094b89768e1773f99c9, type: 3}
+  - {fileID: 5470900484587848811, guid: 6d3c41033447dd749abb62e10a7a5682, type: 3}
+  pipeParent: {fileID: 7286000956653523897}
+  numberGridData: {fileID: 11400000, guid: b1d48277d1fee6e4fb2078ed5248db8a, type: 2}
+  listPipeRight: []

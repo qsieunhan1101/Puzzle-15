@@ -19,9 +19,11 @@ public class TwoDotsManager : MonoBehaviour
     [SerializeField] private Queue<DotItem> rightCircleQueue;
 
     private bool isRotate = false;
+    private float curDuration = 0;
     private void Start()
     {
         Init();
+        ShuffleDots();
     }
     private void Init()
     {
@@ -70,7 +72,7 @@ public class TwoDotsManager : MonoBehaviour
     {
         float newAngle = 0;
         float elapsedTime = 0;
-        float duration = 0.2f;
+        float duration = curDuration;
         if (isRotate == false)
         {
             isRotate = true;
@@ -165,6 +167,23 @@ public class TwoDotsManager : MonoBehaviour
 
     }
 
+    private void ShuffleDots()
+    {
+        curDuration = 0;
+        for (int i = 0; i < 20; i++)
+        {
+            int ran = Random.Range(0, 2);
+            if (ran == 0)
+            {
+                StartCoroutine(RotateCircle(ButtonRotateType.Left));
+            }
+            else
+            {
+                StartCoroutine(RotateCircle(ButtonRotateType.Right));
+            }
+        }
+        curDuration = 0.2f;
+    }
     private Vector2 GetPointOnCircle(Vector2 center, float radius, Vector2 pointP, float alpha)
     {
         float theta = Mathf.Atan2(pointP.y - center.y, pointP.x - center.x);
